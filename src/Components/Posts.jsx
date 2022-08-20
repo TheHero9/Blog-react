@@ -1,3 +1,4 @@
+import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
@@ -5,12 +6,12 @@ import Row from 'react-bootstrap/Row';
 
 function Posts() {
   return (
-    <>
-   
-      <Row xs={{ cols: 1, gutter: 4 }} md={{ cols: 4 }}>
+    <div id="posts">
+      
+      <Row s={{ cols: 1 }} md={{cols: 2}}>
         <Col sm>
         <Card className="cardCustom" >
-      {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+      
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -21,8 +22,11 @@ function Posts() {
       </Card.Body>
     </Card>
 
+    </Col>
+
+    <Col>
     <Card className="cardCustom" >
-        {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+        
         <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>
@@ -34,13 +38,14 @@ function Posts() {
     </Card>
         </Col>
       </Row>
+     
 
     
 
    
     
     
-</>
+</div>
 
 
     

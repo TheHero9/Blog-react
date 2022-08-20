@@ -6,7 +6,7 @@ export default function Footer(){
 
     
     return ( 
-        <div className="footer">
+        <div id="footer">
             <h1>Footer link:</h1>
             <ul>
                 <li>GitHub</li>

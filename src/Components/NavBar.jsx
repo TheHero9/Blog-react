@@ -9,8 +9,8 @@ function NavBar() {
         <Container>
           <Navbar.Brand href="#home">Dimi's Blog</Navbar.Brand>
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Posts</Nav.Link>
-            <Nav.Link href="#features">ContactMe</Nav.Link>
+            <Nav.Link href="#posts">Posts</Nav.Link>
+            <Nav.Link href="#footer">ContactMe</Nav.Link>
             
           </Nav>
         </Container>

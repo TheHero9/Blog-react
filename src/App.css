@@ -2,7 +2,7 @@
   /* text-align: center; */
 }
 
-.footer{
+#footer{
   background-color: beige;
 }
 
@@ -11,9 +11,18 @@
 }
 
 .photo-box{
+  position: relative;
   text-align: center;
   border: 2px solid black;
-  margin: 40px
+  margin: 40px;
+  
+}
+
+.photo-box img{
+  border: 2px solid red;
+  max-width:50%;
+  max-height:50%;
+  
 }
 
 h1{
