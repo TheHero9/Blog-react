@@ -12,6 +12,7 @@ export default function Footer(){
                 <li>GitHub</li>
                 <li>Twitter</li>
                 <li>Instagram</li>
+                <li>Facebook</li>
             </ul>
             
         
