@@ -8,7 +8,7 @@ function Posts() {
   return (
     <div id="posts">
       
-      <Row s={{ cols: 1 }} md={{cols: 2}}>
+      <Row  md={{cols: 2}}>
         <Col sm>
         <Card className="cardCustom" >
       

@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { FaCompass, FaMailBulk} from "react-icons/fa"
 
 function NavBar() {
   return (
@@ -9,8 +10,8 @@ function NavBar() {
         <Container>
           <Navbar.Brand href="#home">Dimi's Blog</Navbar.Brand>
           <Nav className="ms-auto">
-            <Nav.Link href="#posts">Posts</Nav.Link>
-            <Nav.Link href="#footer">ContactMe</Nav.Link>
+            <Nav.Link href="#posts"><FaMailBulk/>Posts</Nav.Link>
+            <Nav.Link href="#footer"><FaCompass/>ContactMe</Nav.Link>
             
           </Nav>
         </Container>

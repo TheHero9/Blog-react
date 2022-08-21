@@ -1,13 +1,12 @@
-.app {
-  /* text-align: center; */
+body { 
+  overflow-x: hidden;
 }
 
-#footer{
-  background-color: beige;
-}
+
 
 .navbar{
   background-color: bisque;
+  
 }
 
 .photo-box{
@@ -25,21 +24,48 @@
   
 }
 
-h1{
-  text-align: center;
-}
-
-.posts div{
-  background-color: blueviolet;
-  width: 200px;
-  height: 200px;
-  margin: 40px;
-  display: inline-block;
-  text-align: center;
-}
-
 .cardCustom{
   color: red;
-  margin: 30px;
+  margin: 20px;
   display: inline-block;
+}
+
+/* Footer */
+#footer {
+  /* align-items: center; */
+  background-color: rgba(0, 0, 0, 0.858);
+  color: white;
+  padding-bottom: 20px;;
+  
+  
+}
+
+ul {
+  /* margin: auto; 
+  width: 50%; */
+  text-align: center;
+}
+
+#footer li{
+  display: inline-block;
+  font-size: 20px;
+  display: inline;
+  margin: 20px;
+  
+
+}
+
+#footer a{
+  text-decoration: none;
+  color: white;
+}
+
+#footer a:hover{
+  text-decoration:overline;
+  color:beige;
+}
+
+#footer h1{
+  text-align: center;
+  padding: 10px;
 }

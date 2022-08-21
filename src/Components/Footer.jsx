@@ -1,5 +1,6 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {FaTwitter, FaInstagram, FaGithub, FaCompass} from "react-icons/fa"
 
 export default function Footer(){
 
@@ -7,12 +8,15 @@ export default function Footer(){
     
     return ( 
         <div id="footer">
-            <h1>Footer link:</h1>
+            <h1><FaCompass/>Contact Me:</h1>
             <ul>
-                <li>GitHub</li>
-                <li>Twitter</li>
-                <li>Instagram</li>
-                <li>Facebook</li>
+                <li><a href="https://github.com/TheHero9">
+                <FaGithub/>Github</a></li>
+                <li><a href="https://www.instagram.com/dimi.v.9/">
+                <FaInstagram/>Instagram</a></li>
+                <li><a href="https://twitter.com/herothe9">
+                <FaTwitter/>Twitter</a></li>
+                
             </ul>
             
         
