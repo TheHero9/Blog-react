@@ -1,55 +1,32 @@
+import { useState } from 'react';
 import { Container } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
+import { propTypes } from 'react-bootstrap/esm/Image';
 import Row from 'react-bootstrap/Row';
+import CardMy from "./Card.jsx"
 
-function Posts() {
+
+export default function Posts(props) {
   return (
     <div id="posts">
-      
-      <Row  md={{cols: 2}}>
+      <Row  md={{rows: 1, cols: 1}}>
         <Col sm>
-        <Card className="cardCustom" >
-      
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+          
+          {/* Generate individual cards for each item from the "notes" array */}
+          {props.notes.map((element, index) => {
+             return <CardMy 
+             key={index} 
+             id={index} 
+             title={element.title} 
+             content={element.content}
+             />
+          })}
 
-    </Col>
-
-    <Col>
-    <Card className="cardCustom" >
-        
-        <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-    </Card>
+          
         </Col>
-      </Row>
+     </Row>   
      
-
-    
-
-   
-    
-    
-</div>
-
-
-    
+    </div>
   );
 }
-
-export default Posts;
