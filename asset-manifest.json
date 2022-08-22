@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/blog-react/static/css/main.a5b8513d.css",
-    "main.js": "/blog-react/static/js/main.d57df255.js",
+    "main.css": "/blog-react/static/css/main.9eb0017f.css",
+    "main.js": "/blog-react/static/js/main.89b8df3f.js",
     "static/media/positano.jpeg": "/blog-react/static/media/positano.e9176dc00dab05195f0f.jpeg",
     "index.html": "/blog-react/index.html",
-    "main.a5b8513d.css.map": "/blog-react/static/css/main.a5b8513d.css.map",
-    "main.d57df255.js.map": "/blog-react/static/js/main.d57df255.js.map"
+    "main.9eb0017f.css.map": "/blog-react/static/css/main.9eb0017f.css.map",
+    "main.89b8df3f.js.map": "/blog-react/static/js/main.89b8df3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5b8513d.css",
-    "static/js/main.d57df255.js"
+    "static/css/main.9eb0017f.css",
+    "static/js/main.89b8df3f.js"
   ]
 }
