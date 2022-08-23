@@ -32,10 +32,11 @@ export default function Input(props){
     }
 
     return (
+        // INput for owner
         <div className="inputs">
-            <input onChange={handleChange} placeholder="Country" value={post.title} name="title"/> <br></br>
+            {/* <input onChange={handleChange} placeholder="Country" value={post.title} name="title"/> <br></br>
             <input onChange={handleChange} placeholder="City" value={post.content} name="content"/> <br></br>
-            <button onClick={submit}>Submit</button>
+            <button onClick={submit}>Submit</button> */}
         </div>
     )
 }
