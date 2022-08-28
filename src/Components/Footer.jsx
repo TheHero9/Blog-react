@@ -11,9 +11,9 @@ export default function Footer(){
             <h1><FaCompass/>Contact Me:</h1>
             <ul>
                 <li><a href="https://github.com/TheHero9">
-                <FaGithub/>Github</a></li>
+                <FaGithub/>Github</a></li> 
                 <li><a href="https://www.instagram.com/dimi.v.9/">
-                <FaInstagram/>Instagram</a></li>
+                <FaInstagram/>Instagram</a></li> 
                 <li><a href="https://twitter.com/herothe9">
                 <FaTwitter/>Twitter</a></li>
                 

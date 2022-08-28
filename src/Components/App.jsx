@@ -22,8 +22,8 @@ function App() {
   return (
     <div className="app">
       <NavBar/>
-      <Photo/>
-      <Input onAdd={addPost}/>
+      {/* <Photo/>
+      <Input onAdd={addPost}/> */}
       <Posts notes={notes}/>
       <Footer/>
       

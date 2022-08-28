@@ -6,13 +6,18 @@ import { propTypes } from 'react-bootstrap/esm/Image';
 import Row from 'react-bootstrap/Row';
 import CardMy from "./Card.jsx"
 import belgrade from "./Photos/belgrade.jpeg"
-import polska from "./Photos/polskaskakavitsa.jpeg"
 import positano from "./Photos/positano.jpeg"
+import polska from "./Photos/polskaskakavitsa.jpeg"
+import React from 'react';
+
+const belgrade1 = React.lazy(()=> import("./Photos/belgrade.jpeg"))
+console.log(belgrade1)
 
 
 export default function Posts(props) {
   return (
     <div id="posts">
+      <h1>My trips: </h1>
       <Row className="row" xs={1}  >
         
           {/* Prerendered cards */}
@@ -20,7 +25,7 @@ export default function Posts(props) {
 
         <Col sm>
           <Card  className="cardCustom" >
-            <Card.Img  className="photo-cards" src={belgrade}/>
+            <Card.Img  className="photo-cards" src={belgrade} loading="lazy" />
             <Card.Body>
               <Card.Title className="country-card">Country: Serbia</Card.Title>
               <Card.Text className="city-card">City: Belgrade</Card.Text>
@@ -32,7 +37,7 @@ export default function Posts(props) {
 
         <Col sm>
           <Card className="cardCustom" >
-            <Card.Img className="photo-cards" src={polska}/>
+            <Card.Img className="photo-cards" src={polska} loading="lazy"/>
              <Card.Body>
               <Card.Title className="country-card">Country: Bulgaria</Card.Title>
               <Card.Text className="city-card">City: Polska Skakavitsa</Card.Text>
@@ -43,7 +48,7 @@ export default function Posts(props) {
 
         <Col sm>
           <Card className="cardCustom" >
-            <Card.Img className="photo-cards" src={positano}/>
+            <Card.Img className="photo-cards" src={positano} loading="lazy"/>
              <Card.Body>
               <Card.Title className="country-card">Country: Italy</Card.Title>
               <Card.Text className="city-card">City:Positano</Card.Text>
