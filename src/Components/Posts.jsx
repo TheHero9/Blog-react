@@ -24,11 +24,27 @@ const MyImage = ({ image }) => (
 
 
 export default function Posts(props) {
-  const [isActive, setIsActive] = useState(false)
+  const [isActiveBelgrade, setIsActiveBelgrade] = useState(false);
+  const [isActiveSkakavitsa, setIsActiveSkakavitsa] = useState(false);
+  const [isActiveNaples, setIsActiveNaples] = useState(false);
+  const [isActiveAmalfi, setIsActiveAmalfi] = useState(false);
+  const [isActivePositano, setIsActivePositano] = useState(false);
 
-  const handleClick = event => {
-    console.log(event.target)
-    setIsActive(current => !current)
+  const handleClick = name => {
+   
+  
+    if(name==="belgrade"){
+      setIsActiveBelgrade(current => !current)
+    } else if(name==="skakavitsa"){
+      setIsActiveSkakavitsa(current => !current)
+    } else if(name==="positano"){
+      setIsActivePositano(current=> !current)
+    } else if(name==="amalfi"){
+      setIsActiveAmalfi(current => !current)
+    } else if(name==="naples"){
+      setIsActiveNaples(current => !current)
+    }
+    
   }
 
   return (
@@ -38,15 +54,15 @@ export default function Posts(props) {
         
           {/* Prerendered cards */}
 
-        <Col className="test9" sm>
-          <Card className={isActive ? "cardCustom card--extended" : 'cardCustom'}>
+        <Col  sm>
+          <Card className={isActiveBelgrade ? "cardCustom card--extended" : 'cardCustom'}>
             <div className="photo-div">
                <MyImage className="photo-cards" image={belgradePhoto}/>
             </div>
             <Card.Body>
               <Card.Title className="country-card">Country: Serbia</Card.Title>
               <Card.Text className="city-card">City: Belgrade</Card.Text>
-              <Card.Text className={isActive ? "" : 'city-description'}>Lorem Ipsum is simply dummy 
+              <Card.Text className={isActiveBelgrade ? "" : 'city-description'}>Lorem Ipsum is simply dummy 
               text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 
               1500s, when an unknown printer took a galley of type and scrambled it to 
@@ -54,51 +70,75 @@ export default function Posts(props) {
               electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
               the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
               publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Card.Text>
-              <Button onClick={handleClick} variant="primary">Expand</Button>
+              <Button onClick={() => handleClick("belgrade")} key="1"  variant="primary">Expand</Button>
             </Card.Body>
           </Card>
         </Col>
        
+
         <Col sm>
-          <Card className="cardCustom" >
-          <MyImage image={polskaSkakavitsaPhoto}/>
+          <Card className={isActiveSkakavitsa ? "cardCustom card--extended" : 'cardCustom'} >  
+            <div className="photo-div"> 
+              <MyImage image={polskaSkakavitsaPhoto}/>
+            </div>
              <Card.Body>
               <Card.Title className="country-card">Country: Bulgaria</Card.Title>
               <Card.Text className="city-card">City: Polska Skakavitsa</Card.Text>
-              {/* <Button onClick={handleClick} variant="secondary">Del</Button> */}
+              <Card.Text className={isActiveSkakavitsa ? "" : 'city-description'}>Lorem Ipsum <br></br>
+              is simply dummy <br></br>
+              text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 
+              1500s, when an unknown printerng versions of Lorem Ipsum.</Card.Text>
+              <Button onClick={() => handleClick("skakavitsa")}   variant="primary">Expand</Button>
             </Card.Body>
           </Card>
         </Col>
 
         <Col sm>
-          <Card className="cardCustom" >
+          <Card className={isActivePositano ? "cardCustom card--extended" : 'cardCustom'} >
+          <div className="photo-div">
           <MyImage image={positanoPhoto}/>
+          </div>
              <Card.Body>
               <Card.Title className="country-card">Country: Italy</Card.Title>
               <Card.Text className="city-card">City:Positano</Card.Text>
-              {/* <Button onClick={handleClick} variant="secondary">Del</Button> */}
+              <Card.Text className={isActivePositano ? "" : 'city-description'}>Lorem Ipsum is simply dummy 
+              text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry'sons of Lorem Ipsum.</Card.Text>
+              <Button onClick={() => handleClick("positano")}   variant="primary">Expand</Button>
             </Card.Body>
         </Card>
         </Col>
 
         <Col sm>
-          <Card className="cardCustom" >
+          <Card className={isActiveAmalfi ? "cardCustom card--extended" : 'cardCustom'} >
+          <div className="photo-div">
           <MyImage image={amalfiPhoto}/>
+          </div>
              <Card.Body>
               <Card.Title className="country-card">Country: Italy</Card.Title>
               <Card.Text className="city-card">City: Amalfi</Card.Text>
-              {/* <Button onClick={handleClick} variant="secondary">Del</Button> */}
+              <Card.Text className={isActiveAmalfi ? "" : 'city-description'}>Lorem Ipsum is simply dummy 
+              text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 
+              1500s, when an unknown printerng versions of Lorem Ipsum.</Card.Text>
+              <Button onClick={() => handleClick("amalfi")}   variant="primary">Expand</Button>
             </Card.Body>
           </Card>
         </Col>
 
         <Col sm>
-          <Card className="cardCustom" >
+          <Card className={isActiveNaples ? "cardCustom card--extended" : 'cardCustom'} >
+          <div className="photo-div">
           <MyImage image={naplesPhoto}/>
+          </div>
              <Card.Body>
               <Card.Title className="country-card">Country: Italy</Card.Title>
               <Card.Text className="city-card">City: Naples</Card.Text>
-              {/* <Button onClick={handleClick} variant="secondary">Del</Button> */}
+              <Card.Text className={isActiveNaples ? "" : 'city-description'}>Lorem Ipsum is simply dummy 
+              text of the printing and typesetting industry. 
+              Lorem Ipsum has been the.</Card.Text>
+              <Button onClick={() => handleClick("naples")}   variant="primary">Expand</Button>
             </Card.Body>
           </Card>
         </Col>
