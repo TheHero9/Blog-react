@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/blog-react/static/css/main.849feb3d.css",
-    "main.js": "/blog-react/static/js/main.107eb520.js",
+    "main.css": "/blog-react/static/css/main.fe53c1c6.css",
+    "main.js": "/blog-react/static/js/main.0fad4aa9.js",
     "static/media/polskaskakavitsa.jpeg": "/blog-react/static/media/polskaskakavitsa.bc1bcd6f0076b063117e.jpeg",
+    "static/media/amalfi.jpeg": "/blog-react/static/media/amalfi.674adff34d3f863da300.jpeg",
     "static/media/belgrade.jpeg": "/blog-react/static/media/belgrade.d4cb5a82755cbc31dbbf.jpeg",
     "static/media/positano.jpeg": "/blog-react/static/media/positano.e9176dc00dab05195f0f.jpeg",
+    "static/media/naples.jpeg": "/blog-react/static/media/naples.81698c9a8c73406ea238.jpeg",
     "index.html": "/blog-react/index.html",
-    "main.849feb3d.css.map": "/blog-react/static/css/main.849feb3d.css.map",
-    "main.107eb520.js.map": "/blog-react/static/js/main.107eb520.js.map"
+    "main.fe53c1c6.css.map": "/blog-react/static/css/main.fe53c1c6.css.map",
+    "main.0fad4aa9.js.map": "/blog-react/static/js/main.0fad4aa9.js.map"
   },
   "entrypoints": [
-    "static/css/main.849feb3d.css",
-    "static/js/main.107eb520.js"
+    "static/css/main.fe53c1c6.css",
+    "static/js/main.0fad4aa9.js"
   ]
 }
