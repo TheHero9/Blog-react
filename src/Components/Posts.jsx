@@ -62,7 +62,7 @@ export default function Posts(props) {
             <Card.Body>
               <Card.Title className="country-card">Country: Serbia</Card.Title>
               <Card.Text className="city-card">City: Belgrade</Card.Text>
-              <Card.Text className={isActiveBelgrade ? "" : 'city-description'}>Lorem Ipsum is simply dummy 
+              <Card.Text className={isActiveBelgrade ? "my-p" : 'my-p city-description'}>Lorem Ipsum is simply dummy 
               text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 
               1500s, when an unknown printer took a galley of type and scrambled it to 
@@ -84,7 +84,7 @@ export default function Posts(props) {
              <Card.Body>
               <Card.Title className="country-card">Country: Bulgaria</Card.Title>
               <Card.Text className="city-card">City: Polska Skakavitsa</Card.Text>
-              <Card.Text className={isActiveSkakavitsa ? "" : 'city-description'}>Lorem Ipsum <br></br>
+              <Card.Text className={isActiveSkakavitsa ? "my-p" : 'my-p city-description'}>Lorem Ipsum <br></br>
               is simply dummy <br></br>
               text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 
@@ -102,7 +102,7 @@ export default function Posts(props) {
              <Card.Body>
               <Card.Title className="country-card">Country: Italy</Card.Title>
               <Card.Text className="city-card">City:Positano</Card.Text>
-              <Card.Text className={isActivePositano ? "" : 'city-description'}>Lorem Ipsum is simply dummy 
+              <Card.Text className={isActivePositano ? "my-p" : 'my-p city-description'}>Lorem Ipsum is simply dummy 
               text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry'sons of Lorem Ipsum.</Card.Text>
               <Button onClick={() => handleClick("positano")}   variant="primary">Expand</Button>
@@ -118,7 +118,7 @@ export default function Posts(props) {
              <Card.Body>
               <Card.Title className="country-card">Country: Italy</Card.Title>
               <Card.Text className="city-card">City: Amalfi</Card.Text>
-              <Card.Text className={isActiveAmalfi ? "" : 'city-description'}>Lorem Ipsum is simply dummy 
+              <Card.Text className={isActiveAmalfi ?  "my-p" : 'my-p city-description'}>Lorem Ipsum is simply dummy 
               text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 
               1500s, when an unknown printerng versions of Lorem Ipsum.</Card.Text>
@@ -135,7 +135,7 @@ export default function Posts(props) {
              <Card.Body>
               <Card.Title className="country-card">Country: Italy</Card.Title>
               <Card.Text className="city-card">City: Naples</Card.Text>
-              <Card.Text className={isActiveNaples ? "" : 'city-description'}>Lorem Ipsum is simply dummy 
+              <Card.Text className={isActiveNaples ?  "my-p" : 'my-p city-description'}>Lorem Ipsum is simply dummy 
               text of the printing and typesetting industry. 
               Lorem Ipsum has been the.</Card.Text>
               <Button onClick={() => handleClick("naples")}   variant="primary">Expand</Button>
