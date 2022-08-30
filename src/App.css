@@ -1,23 +1,17 @@
 body { 
   overflow-x: hidden;
 }
-
-
-
 .navbar{
   background-color: bisque;
-  
 }
 
 
-/* Footer */
+/* ====================Footer======================= */
 #footer {
   /* align-items: center; */
   background-color: rgba(0, 0, 0, 0.858);
   color: white;
-  padding-bottom: 20px;;
-  
-  
+  padding-bottom: 50px;;
 }
 
 ul {
@@ -30,8 +24,6 @@ ul {
   font-size: 1.3rem;
   display: inline;
   margin: 20px;
-  
-
 }
 
 #footer a{
@@ -58,9 +50,9 @@ ul {
 
 
 
-/* Photo cards */
+/* ==========================Photo cards======================== */
 .cardCustom{
-  margin: 20px;
+  margin-bottom: 30px;
   display: inline-block;
 }
 
@@ -70,25 +62,27 @@ ul {
 }
 
 .row{
-  margin: 40px;
+  margin: 10px;
   position: relative;
   text-align: center;
-}
-
-
-@media only screen and (min-width: 450px) {
-.cardCustom:hover{
-  transform: scale(1.01);
-  border-bottom: 3px solid black;
-  cursor: pointer;
-}
 }
 
 .card--extended{
   width: 550px;
   height: auto;
-  animation: expand 4.5s ease;
+}
+
+.city-description{
+  display: none;
   
+}
+
+.my-p{
+  text-align: left;
+}
+
+.city-card{
+  text-align: center;
 }
 
 .photo-div{
@@ -122,37 +116,27 @@ ul {
 
   .card--extended .photo-div{
     /* border: 2px solid black; */
-    margin: 0px 30px;
+    margin: 10px 30px;
   }
 
   .photo-div{
     float: none !important;
-    
   }
-  
 }
 
 
 
+@media only screen and (min-width: 450px) {
+  .cardCustom:hover{
+    transform: scale(1.01);
+    border-bottom: 3px solid black;
+    cursor: pointer;
+    }
+  }
 
 
 
-
-
-.city-description{
-  display: none;
-  
-}
-
-.my-p{
-  text-align: left;
-}
-
-.city-card{
-  text-align: center;
-}
-
-/* Posts div */
+/* Posts "my trips"" */
 #posts h1{
   text-align: center;
   margin-top: 30px;
