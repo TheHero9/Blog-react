@@ -62,15 +62,16 @@ export default function Posts(props) {
             <Card.Body>
               <Card.Title className="country-card">Country: Serbia</Card.Title>
               <Card.Text className="city-card">City: Belgrade</Card.Text>
-              <Card.Text className={isActiveBelgrade ? "my-p" : 'my-p city-description'}>Lorem Ipsum is simply dummy 
+              <Card.Text className={isActiveBelgrade ? "my-p" : 'my-p city-description'}>
+              <span>        </span>Lorem Ipsum is simply dummy 
               text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 
               1500s, when an unknown printer took a galley of type and scrambled it to 
               make a type specimen book. It has survived not only five centuries, but also the leap into 
-              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+              electronic typesetting, Leoki is gay. It was popularised in the 1960s with 
               the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
               publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Card.Text>
-              <Button onClick={() => handleClick("belgrade")} key="1"  variant="primary">Expand</Button>
+              <Button onClick={() => handleClick("belgrade")}  variant="primary">{isActiveBelgrade ? "Close" : 'Expand'}</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -84,12 +85,13 @@ export default function Posts(props) {
              <Card.Body>
               <Card.Title className="country-card">Country: Bulgaria</Card.Title>
               <Card.Text className="city-card">City: Polska Skakavitsa</Card.Text>
-              <Card.Text className={isActiveSkakavitsa ? "my-p" : 'my-p city-description'}>Lorem Ipsum <br></br>
-              is simply dummy <br></br>
+              <Card.Text className={isActiveSkakavitsa ? "my-p" : 'my-p city-description'}>
+              Lorem Ipsum 
+              is simply dummy
               text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 
               1500s, when an unknown printerng versions of Lorem Ipsum.</Card.Text>
-              <Button onClick={() => handleClick("skakavitsa")}   variant="primary">Expand</Button>
+              <Button onClick={() => handleClick("skakavitsa")}   variant="primary">{isActiveSkakavitsa ? "Close" : 'Expand'}</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -105,7 +107,7 @@ export default function Posts(props) {
               <Card.Text className={isActivePositano ? "my-p" : 'my-p city-description'}>Lorem Ipsum is simply dummy 
               text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry'sons of Lorem Ipsum.</Card.Text>
-              <Button onClick={() => handleClick("positano")}   variant="primary">Expand</Button>
+              <Button onClick={() => handleClick("positano")}   variant="primary">{isActivePositano ? "Close" : 'Expand'}</Button>
             </Card.Body>
         </Card>
         </Col>
@@ -120,9 +122,9 @@ export default function Posts(props) {
               <Card.Text className="city-card">City: Amalfi</Card.Text>
               <Card.Text className={isActiveAmalfi ?  "my-p" : 'my-p city-description'}>Lorem Ipsum is simply dummy 
               text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 
+              Lorem Ipsum Pbn is my king's standard dummy text ever since the 
               1500s, when an unknown printerng versions of Lorem Ipsum.</Card.Text>
-              <Button onClick={() => handleClick("amalfi")}   variant="primary">Expand</Button>
+              <Button onClick={() => handleClick("amalfi")}   variant="primary">{isActiveAmalfi ? "Close" : 'Expand'}</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -137,8 +139,10 @@ export default function Posts(props) {
               <Card.Text className="city-card">City: Naples</Card.Text>
               <Card.Text className={isActiveNaples ?  "my-p" : 'my-p city-description'}>Lorem Ipsum is simply dummy 
               text of the printing and typesetting industry. 
+              is simply dummy 
+              text of the printArmo is noob industry. 
               Lorem Ipsum has been the.</Card.Text>
-              <Button onClick={() => handleClick("naples")}   variant="primary">Expand</Button>
+              <Button onClick={() => handleClick("naples")}   variant="primary">{isActiveNaples ? "Close" : 'Expand'}</Button>
             </Card.Body>
           </Card>
         </Col>
