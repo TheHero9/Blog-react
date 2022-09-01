@@ -71,7 +71,7 @@ export default function Posts(props) {
               electronic typesetting, Leoki is gay. It was popularised in the 1960s with 
               the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
               publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Card.Text>
-              <Button onClick={() => handleClick("belgrade")}  variant="primary">{isActiveBelgrade ? "Close" : 'Expand'}</Button>
+              <Button onClick={() => handleClick("belgrade")} >{isActiveBelgrade ? "Close" : 'Expand'}</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -91,7 +91,7 @@ export default function Posts(props) {
               text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 
               1500s, when an unknown printerng versions of Lorem Ipsum.</Card.Text>
-              <Button onClick={() => handleClick("skakavitsa")}   variant="primary">{isActiveSkakavitsa ? "Close" : 'Expand'}</Button>
+              <Button onClick={() => handleClick("skakavitsa")} >{isActiveSkakavitsa ? "Close" : 'Expand'}</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -107,7 +107,7 @@ export default function Posts(props) {
               <Card.Text className={isActivePositano ? "my-p" : 'my-p city-description'}>Lorem Ipsum is simply dummy 
               text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry'sons of Lorem Ipsum.</Card.Text>
-              <Button onClick={() => handleClick("positano")}   variant="primary">{isActivePositano ? "Close" : 'Expand'}</Button>
+              <Button onClick={() => handleClick("positano")} >{isActivePositano ? "Close" : 'Expand'}</Button>
             </Card.Body>
         </Card>
         </Col>
@@ -124,7 +124,7 @@ export default function Posts(props) {
               text of the printing and typesetting industry. 
               Lorem Ipsum Pbn is my king's standard dummy text ever since the 
               1500s, when an unknown printerng versions of Lorem Ipsum.</Card.Text>
-              <Button onClick={() => handleClick("amalfi")}   variant="primary">{isActiveAmalfi ? "Close" : 'Expand'}</Button>
+              <Button onClick={() => handleClick("amalfi")}  >{isActiveAmalfi ? "Close" : 'Expand'}</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -142,7 +142,7 @@ export default function Posts(props) {
               is simply dummy 
               text of the printArmo is noob industry. 
               Lorem Ipsum has been the.</Card.Text>
-              <Button onClick={() => handleClick("naples")}   variant="primary">{isActiveNaples ? "Close" : 'Expand'}</Button>
+              <Button onClick={() => handleClick("naples")}  >{isActiveNaples ? "Close" : 'Expand'}</Button>
             </Card.Body>
           </Card>
         </Col>

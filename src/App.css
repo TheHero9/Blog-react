@@ -1,17 +1,25 @@
 body { 
   overflow-x: hidden;
 }
+
+
 .navbar{
-  background-color: bisque;
+  /* font-weight: bold; */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-link:hover{
+  color:beige;
 }
 
 
 /* ====================Footer======================= */
 #footer {
-  /* align-items: center; */
   background-color: rgba(0, 0, 0, 0.858);
   color: white;
   padding-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+  /* font-weight: bold; */
 }
 
 ul {
@@ -52,8 +60,23 @@ ul {
 .cardCustom{
   margin-bottom: 30px;
   display: inline-block;
-  border: 1px solid rgb(203, 200, 200)
+  border: 1px solid rgb(203, 200, 200);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
+
+.btn{
+  background-color:rgb(27, 26, 26) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.btn:hover{
+  background-color: beige !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+
 
 .photo-cards{
   width: 251px;
@@ -69,6 +92,9 @@ ul {
 .card--extended{
   width: 550px;
   height: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  
 }
 
 .city-description{
@@ -79,6 +105,7 @@ ul {
 .my-p{
   text-align:justify;
   text-indent: 50px;
+  padding: 0 30px;
 }
 
 .city-card{
@@ -90,8 +117,8 @@ ul {
   
 }
 .country-card{
-  font-weight: 500;
-  text-decoration: underline;
+  font-family: 'Merriweather', serif;
+  text-decoration: underline 1px;
 }
 
 .card--extended .photo-div{
@@ -107,12 +134,14 @@ ul {
   .card--extended{
     width: 950px;
     height: 375px;
+    /* height: auto; */
   }
 
    /* Buttons */
    .card--extended .btn{
-    position: absolute;
-    bottom: 20px;
+    /* position: absolute;
+    bottom: 20px; */
+    margin-top: 20px;
   }
 }
 
@@ -157,5 +186,8 @@ ul {
   text-align: center;
   margin-top: 30px;
   font-weight: 700;
+  margin-bottom: 40px;
+  font-family: 'Merriweather', serif;
+
 }
 
