@@ -160,6 +160,10 @@ ul {
   .photo-div{
     float: none !important;
   }
+
+  .my-p{
+    padding: 0 10px;
+  }
 }
 
 
