@@ -1,4 +1,8 @@
-import '../App.css';
+import '../Css/App.css';
+import '../Css/Footer.css'
+import '../Css/Cards.css'
+
+
 import Footer from "./Footer"
 import NavBar from './NavBar';
 

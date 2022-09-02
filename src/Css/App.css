@@ -1,0 +1,12 @@
+body { 
+  overflow-x: hidden;
+}
+
+.navbar{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-link:hover{
+  color:beige;
+}
+

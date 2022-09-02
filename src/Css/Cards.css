@@ -1,0 +1,137 @@
+.cardCustom{
+    margin-bottom: 30px;
+    display: inline-block;
+    border: 1px solid rgb(203, 200, 200);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+  
+
+ .btn{
+    background-color:rgb(27, 26, 26) !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  .btn:hover{
+    background-color: beige !important;
+    color: black !important;
+    border: 1px solid black !important;
+  }
+  
+  
+  .photo-cards{
+    width: 251px;
+    height: 250px;
+  }
+  
+  .row{
+    margin: 10px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .card--extended{
+    width: 550px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+  }
+  
+  .city-description{
+    display: none;
+  }
+  
+  .my-p{
+    text-align:justify;
+    text-indent: 50px;
+    padding: 0 30px;
+  }
+  
+  .city-card{
+    text-align: center;
+  }
+  
+  .photo-div{
+    float: left !important;
+    
+  }
+  .country-card{
+    font-family: 'Merriweather', serif;
+    text-decoration: underline 1px;
+  }
+  
+  .card--extended .photo-div{
+    
+    margin: 10px 30px 30px 10px;
+  }
+  
+  .card--extended .photo-cards{
+    border: 10px outset rgba(247, 224, 182, 0.611);
+  }
+  
+  @media only screen and (min-width: 1100px) {
+    .card--extended{
+      width: 950px;
+      height: 375px;
+    }
+  
+
+     /* Buttons */
+     .card--extended .btn{
+      /* position: absolute;
+      bottom: 20px; */
+      margin-top: 20px;
+    }
+  }
+  
+  
+  /* Phone settings */
+  @media only screen and (max-width: 650px) {
+    .card--extended{
+      width: auto;
+      height: auto; 
+    }
+  
+    .card--extended .photo-div{
+      margin: 10px 30px;
+    }
+  
+    .photo-div{
+      float: none !important;
+    }
+  
+    .my-p{
+      padding: 0 10px;
+    }
+  }
+  
+  
+  
+  @media only screen and (min-width: 450px) {
+    .cardCustom:hover{
+      transform: scale(1.01);
+      border-bottom: 3px solid black;
+      cursor: pointer;
+      }
+      .card--extended:hover{
+        transform: none;
+        cursor:default;
+      }
+    }
+  
+  
+   
+  
+  
+  /* Posts "my trips"" */
+  #posts h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-family: 'Merriweather', serif;
+  
+  }
+  
+  

@@ -1,0 +1,38 @@
+#footer {
+    background-color: rgba(0, 0, 0, 0.858);
+    color: white;
+    padding-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  ul {
+    text-align: center;
+  }
+  
+  #footer li{
+    font-size: 1.3rem;
+    display: inline;
+    margin: 20px;
+  }
+  
+  #footer a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  #footer a:hover{
+    text-decoration:overline;
+    color:beige;
+  }
+  
+  #footer h1{
+    text-align: center;
+    padding:10px;
+  }
+  
+  @media only screen and (max-width: 450px) {
+    #footer li{
+      display: block;
+      margin: 2px;
+    }
+  }
