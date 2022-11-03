@@ -63,7 +63,7 @@ export default function Posts(props) {
               <Card.Title className="country-card">Country: Serbia</Card.Title>
               <Card.Text className="city-card">City: Belgrade</Card.Text>
               <Card.Text className={isActiveBelgrade ? "my-p" : 'my-p city-description'}>
-              <span>        </span>Lorem Ipsum is simply dummy 
+              <span>        </span>Lorem Test Ipsum is simply dummy 
               text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 
               1500s, when an unknown printer took a galley of type and scrambled it to 
