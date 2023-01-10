@@ -1,4 +1,3 @@
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {FaTwitter, FaInstagram, FaGithub, FaCompass} from "react-icons/fa"
 

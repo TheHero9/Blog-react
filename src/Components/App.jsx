@@ -7,13 +7,35 @@ import Footer from "./Footer"
 import NavBar from './NavBar';
 
 import Posts from './Posts';
+import Register from '../Pages/Register';
+import Login from '../Pages/Login';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
+    
     <div className="app">
-      <NavBar/>
-      <Posts />
-      <Footer/>
+
+      <Router>
+
+        <NavBar/>
+        
+
+        <Routes>
+        <Route path='/Blog-react' element={<Posts />} />
+          <Route path='/posts' element={<Posts />} />
+          
+          <Route path='/register' element={<Register />} />
+          <Route path='/login' element={<Login />} />
+
+        </Routes>
+
+
+        <Footer/>
+      </Router>
+      
+      
       
     </div>
   );
