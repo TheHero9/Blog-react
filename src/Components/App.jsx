@@ -25,8 +25,8 @@ function App() {
         <Routes>
         <Route path='/' element={<Posts />} />
           <Route path='Blog-react/#/posts' element={<Posts />} />
-          <Route path='#/register' element={<Register />} />
-          <Route path='#/login' element={<Login />} />
+          <Route path='/#/register' element={<Register />} />
+          <Route path='/#/login' element={<Login />} />
 
         </Routes>
 
