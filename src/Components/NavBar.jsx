@@ -15,8 +15,8 @@ function NavBar() {
             
             <Nav.Link href="/posts"><FaMailBulk className='Emoji'/>Posts</Nav.Link>
             <Nav.Link href="#footer"><FaCompass className='Emoji'/>Contact Me</Nav.Link>
-            <Nav.Link href="/#/register"><FaDoorClosed className='Emoji'/>Register</Nav.Link>
-            <Nav.Link href="/#/login"><FaDoorOpen className='Emoji'/>LogIn</Nav.Link>
+            <Nav.Link href="/register"><FaDoorClosed className='Emoji'/>Register</Nav.Link>
+            <Nav.Link href="/login"><FaDoorOpen className='Emoji'/>LogIn</Nav.Link>
             
           </Nav>
           </Navbar.Collapse>
