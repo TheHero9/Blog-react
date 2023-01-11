@@ -13,10 +13,10 @@ function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             
-            <Nav.Link href="/posts"><FaMailBulk className='Emoji'/>Posts</Nav.Link>
+            <Nav.Link href="Blog-react/#/posts"><FaMailBulk className='Emoji'/>Posts</Nav.Link>
             <Nav.Link href="#footer"><FaCompass className='Emoji'/>Contact Me</Nav.Link>
-            <Nav.Link href="/register"><FaDoorClosed className='Emoji'/>Register</Nav.Link>
-            <Nav.Link href="/login"><FaDoorOpen className='Emoji'/>LogIn</Nav.Link>
+            <Nav.Link href="Blog-react/#/register"><FaDoorClosed className='Emoji'/>Register</Nav.Link>
+            <Nav.Link href="Blog-react/#/login"><FaDoorOpen className='Emoji'/>LogIn</Nav.Link>
             
           </Nav>
           </Navbar.Collapse>
