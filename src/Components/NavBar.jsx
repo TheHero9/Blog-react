@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FaCompass, FaMailBulk, FaDoorOpen, FaDoorClosed, FaArrowRight} from "react-icons/fa"
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
@@ -13,6 +14,10 @@ function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             
+            <Link className='nav-link' to="/posts" relative="path">Test1</Link>
+            <Link className='nav-link' to="Blog-react/#/posts" relative="path">Test2</Link>
+            <Link className='nav-link' to="../#/posts" relative="path">Test3</Link>
+            <Link className='nav-link' to=".." relative="path">Test4</Link>
             <Nav.Link href="Blog-react/#/posts"><FaMailBulk className='Emoji'/>Posts</Nav.Link>
             <Nav.Link href="#footer"><FaCompass className='Emoji'/>Contact Me</Nav.Link>
             <Nav.Link href="Blog-react/#/register"><FaDoorClosed className='Emoji'/>Register</Nav.Link>
