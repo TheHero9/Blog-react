@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Blog-react/static/css/main.d7106e29.css",
-    "main.js": "/Blog-react/static/js/main.1336654c.js",
+    "main.js": "/Blog-react/static/js/main.d2d405d4.js",
     "static/media/polskaskakavitsa.jpeg": "/Blog-react/static/media/polskaskakavitsa.bc1bcd6f0076b063117e.jpeg",
     "static/media/amalfi.jpeg": "/Blog-react/static/media/amalfi.674adff34d3f863da300.jpeg",
     "static/media/belgrade.jpeg": "/Blog-react/static/media/belgrade.d4cb5a82755cbc31dbbf.jpeg",
@@ -9,10 +9,10 @@
     "static/media/naples.jpeg": "/Blog-react/static/media/naples.81698c9a8c73406ea238.jpeg",
     "index.html": "/Blog-react/index.html",
     "main.d7106e29.css.map": "/Blog-react/static/css/main.d7106e29.css.map",
-    "main.1336654c.js.map": "/Blog-react/static/js/main.1336654c.js.map"
+    "main.d2d405d4.js.map": "/Blog-react/static/js/main.d2d405d4.js.map"
   },
   "entrypoints": [
     "static/css/main.d7106e29.css",
-    "static/js/main.1336654c.js"
+    "static/js/main.d2d405d4.js"
   ]
 }
