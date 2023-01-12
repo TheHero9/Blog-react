@@ -3,7 +3,7 @@ export default function ContactMe(){
         <>
 
         <h1 style={{color: "red", textAlign: "center"}}>Contact me:</h1>
-        <h5>Work in progress....</h5>
+        <h5>⚠️Work in progress....</h5>
         </>
     )
 }
