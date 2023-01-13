@@ -76,3 +76,18 @@ input::placeholder {
     width: 70%;
   }
 } */
+
+
+/* .flex-my {
+  display: flex !important;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: red;
+} */
+
+.flex-my h2{
+  text-align: center;
+}

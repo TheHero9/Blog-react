@@ -1,39 +1,41 @@
 import { useState } from "react";
 import { useRef } from "react";
 import { Alert, Button, Card, Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useAuth } from "../Context/AuthContext";
 
-const Register = () => {
+
+const Login = () => {
 
     const emailRef = useRef()
     const passwordRef = useRef()
-    const passwordConfirmRef = useRef()
-    const { signup, currentUser } = useAuth()
+    const { login } = useAuth()
 
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
 
-
+    //Go back to the main page
+    const navigate = useNavigate()      
+    const goback = () => {
+        navigate('/')
+    }
 
     async function handleSubmit(e){
 
         //Prevent from refreshing
         e.preventDefault()
 
-        if(passwordRef.current.value !== passwordConfirmRef.current.value){
-            return setError("Passwords do no match :?")
-        }
-
         try{
             setError('')
             setLoading(true)
 
             //Do the signup
-           await  signup(emailRef.current.value, passwordRef.current.value)
+           await  login(emailRef.current.value, passwordRef.current.value)
+            goback()
+
         } catch(error) {
             console.log(error)
-            setError('Failed to create an account')
+            setError('Failed to log in')
         }
 
         setLoading(false)
@@ -45,9 +47,8 @@ const Register = () => {
 
          
           <Card>
-            <Card.Body>
-                <h2> Sign Up <br></br> (⚠️Work in progress)</h2>
-                {currentUser && currentUser.email}
+            <Card.Body className="flex-my">
+                <h2> Log In</h2>
                 {error && <Alert variant="danger">{error}</Alert>}
                 <Form onSubmit={handleSubmit}>
                     <Form.Group id='email'>
@@ -60,20 +61,21 @@ const Register = () => {
                         <Form.Control type="password" ref={passwordRef} required/>
                     </Form.Group>
 
-                    <Form.Group id='password-confirm'>
-                        <Form.Label>Confirm Password</Form.Label>
-                        <Form.Control type="password" ref={passwordConfirmRef} required/>
-                    </Form.Group>
+            
 
-                    <Button disabled={loading} className="w-20" type="submit">
-                        Sign Up
+                    <Button disabled={loading} className="w-100 mt-3" type="submit">
+                       Log In
                     </Button>
                 </Form>
+                <div className="w-100 text-center mt-4">
+                    <Link  to="/forgot-password" relative="path">Forgot Password?</Link>
+                </div>
             </Card.Body>
           </Card>
 
+
           <div className="w-100 text-center mt-2">
-            Already have an account? <Link  to="/login" relative="path">Log in</Link>
+            Need an account? <Link  to="/register" relative="path">Sign Up</Link>
           </div>
 
         </>
@@ -81,4 +83,4 @@ const Register = () => {
 }
 
 
-export default Register;
+export default Login;

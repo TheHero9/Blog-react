@@ -1,19 +1,21 @@
-import '../Css/App.css';
-import '../Css/Footer.css'
-import '../Css/Cards.css'
+import '../../Css/App.css'
+import '../../Css/Footer.css'
+import '../../Css/Cards.css'
 
 
 import Footer from "./Footer"
 import NavBar from './NavBar';
 
 import Posts from './Posts';
-import Register from '../Pages/Register';
-import Login from '../Pages/Login';
 import ContactMe from './ContactMe';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import RegisterPage from '../Pages/RegisterPage';
-import LoginPage from '../Pages/LoginPage';
+import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
+
+
+import RegisterPage from './Register/RegisterPage';
+import LoginPage from './Login/LoginPage'
+import Dashboard from '../Pages/Dashboard'
+import ForgotPassword from '../Pages/ForgotPassword';
 
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
           <Route path='/footer' element={<ContactMe />} />
           <Route path='/register' element={<RegisterPage />} />
           <Route path='/login' element={<LoginPage />} />
+          <Route path='/dashboard' element={ <Dashboard />}/>
+          <Route path='/forgot-password' element={ <ForgotPassword />}/>
         </Routes>
 
 

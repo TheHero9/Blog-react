@@ -6,7 +6,7 @@ import Login from "./Login"
 function LoginPage(){
     return(
         <>
-        <AuthProvider>
+        
             <Container  
             className="d-flex align-items-center justify-content-center" 
             style={{minHeight: "100vh"}}
@@ -16,7 +16,6 @@ function LoginPage(){
                     <Login></Login>
                 </div>
             </Container>
-        </AuthProvider>
         </>
     )
 }
