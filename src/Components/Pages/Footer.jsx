@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {FaTwitter, FaInstagram, FaGithub, FaCompass} from "react-icons/fa"
+import {FaTwitter, FaInstagram, FaGithub, FaCompass, FaLinkedinIn} from "react-icons/fa"
 
 export default function Footer(){
 
@@ -10,11 +10,11 @@ export default function Footer(){
             <h1><FaCompass/>Contact Me:</h1>
             <ul>
                 <li><a href="https://github.com/TheHero9">
-                <FaGithub/>Github</a></li> 
-                <li><a href="https://www.instagram.com/dimi.v.9/">
-                <FaInstagram/>Instagram</a></li> 
+                <FaGithub className='emoji-footer'/>Github</a></li> 
+                <li><a href="https://www.linkedin.com/notifications/?filter=all">
+                <FaLinkedinIn className='emoji-footer'/>LinkedIn</a></li> 
                 <li><a href="https://twitter.com/herothe9">
-                <FaTwitter/>Twitter</a></li>
+                <FaTwitter className='emoji-footer'/>Twitter</a></li>
                 
             </ul>
             

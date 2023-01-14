@@ -20,9 +20,6 @@ function NavBar() {
             
             <Link className='nav-link' to="/posts" relative="path"><FaMailBulk className='Emoji'/>Posts</Link>
             <Link className='nav-link' to="/footer" relative="path"><FaCompass className='Emoji'/>Contact Me</Link>
-            {/* <Link className='nav-link' to="/register" relative="path"><FaDoorClosed className='Emoji'/>Register</Link> */}
-            {/* <Link className='nav-link' to="/login" relative="path"><FaDoorOpen className='Emoji'/>LogIn</Link> */}
-
             {currentUser ? 
             <Link className='nav-link' to="/dashboard" relative="path"><FaSmileBeam className='Emoji'/> Profile </Link>
             
