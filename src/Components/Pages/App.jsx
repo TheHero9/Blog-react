@@ -16,6 +16,7 @@ import RegisterPage from './Register/RegisterPage';
 import LoginPage from './Login/LoginPage'
 import Dashboard from '../Pages/Dashboard'
 import ForgotPassword from '../Pages/ForgotPassword';
+import SwitchMode from './SwitchMode';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
 
 
         <NavBar/>
-      
+        <SwitchMode/>
         
 
         <Routes>
@@ -42,6 +43,7 @@ function App() {
 
 
         <Footer/>
+        
       
       
       

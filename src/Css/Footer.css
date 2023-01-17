@@ -1,6 +1,6 @@
 #footer {
     background-color: rgba(0, 0, 0, 0.858);
-    color: white;
+    color: beige;
     padding-bottom: 40px;
     font-family: 'Open Sans', sans-serif;
   }
@@ -17,7 +17,7 @@
   
   #footer a{
     text-decoration: none;
-    color: white;
+    color: beige;
   }
   
   #footer a:hover{

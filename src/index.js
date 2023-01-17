@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './Css/index.css';
 import App from './Components/Pages/App';
 import {HashRouter as Router} from 'react-router-dom';
 import { AuthProvider } from './Components/Pages/Context/AuthContext';

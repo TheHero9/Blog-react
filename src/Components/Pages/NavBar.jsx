@@ -1,8 +1,9 @@
+import { Button } from 'bootstrap';
 import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { FaCompass, FaMailBulk, FaDoorOpen, FaDoorClosed, FaSmileBeam, FaSmile} from "react-icons/fa"
+import { FaCompass, FaMailBulk, FaDoorOpen, FaDoorClosed, FaSmileBeam, FaMoon} from "react-icons/fa"
 import { Link } from 'react-router-dom';
 import { useAuth } from './Context/AuthContext';
 
@@ -16,8 +17,8 @@ function NavBar() {
           <Navbar.Brand> Dimi's Blog</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            
+          <Nav className="ms-auto"> 
+
             <Link className='nav-link' to="/posts" relative="path"><FaMailBulk className='Emoji'/>Posts</Link>
             <Link className='nav-link' to="/footer" relative="path"><FaCompass className='Emoji'/>Contact Me</Link>
             {currentUser ? 
