@@ -22,7 +22,8 @@
 }
 
 .darkCard{
-  background-color: red;
+  background-color: rgb(133, 128, 128) !important;
+  color: white;
 }
 
 

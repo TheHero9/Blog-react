@@ -4,6 +4,8 @@ import { Card } from "react-bootstrap";
 import { Form, Link } from "react-router-dom";
 import { useEffect } from 'react';
 
+
+
 export default function SwitchMode(){
     const [theme, setTheme] = useState("light")
 
@@ -18,6 +20,8 @@ export default function SwitchMode(){
 
     useEffect(()=>{
         document.body.className = theme;
+        // document.querySelector(".test").className = "testwe"
+
     }, [theme]);
 
     return(

@@ -67,7 +67,7 @@
   }
   
   .card--extended .photo-cards{
-    border: 10px outset rgba(202, 185, 153, 0.611);
+    border: 7.5px outset rgba(202, 185, 153, 0.611);
   }
   
   @media only screen and (min-width: 1100px) {

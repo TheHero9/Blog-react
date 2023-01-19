@@ -55,7 +55,7 @@ export default function Posts(props) {
           {/* Prerendered cards */}
 
         <Col  sm>
-          <Card className={isActiveBelgrade ? "cardCustom card--extended" : 'cardCustom'}>
+          <Card className={isActiveBelgrade ? "cardCustom card--extended darkCard" : 'cardCustom'}>
             <div className="photo-div">
                <MyImage className="photo-cards" image={belgradePhoto}/>
             </div>
