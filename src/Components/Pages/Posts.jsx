@@ -3,12 +3,16 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 
+import { useThemeUpdate } from "./Context/ThemeContext"
+import { useTheme } from "./Context/ThemeContext"
+
 import React, { useState } from 'react';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import {belgradePhoto, positanoPhoto, polskaSkakavitsaPhoto, amalfiPhoto, naplesPhoto} from "./PhotoRender.jsx"
+import { FaMoon } from 'react-icons/fa';
 
 const MyImage = ({ image }) => (
   <div>
@@ -24,6 +28,7 @@ const MyImage = ({ image }) => (
 
 
 export default function Posts(props) {
+
   const [isActiveBelgrade, setIsActiveBelgrade] = useState(false);
   const [isActiveSkakavitsa, setIsActiveSkakavitsa] = useState(false);
   const [isActiveNaples, setIsActiveNaples] = useState(false);
@@ -55,7 +60,7 @@ export default function Posts(props) {
           {/* Prerendered cards */}
 
         <Col  sm>
-          <Card className={isActiveBelgrade ? "cardCustom card--extended darkCard" : 'cardCustom'}>
+          <Card className={isActiveBelgrade ? "cardCustom card--extended" : 'cardCustom'}>
             <div className="photo-div">
                <MyImage className="photo-cards" image={belgradePhoto}/>
             </div>
@@ -70,7 +75,7 @@ export default function Posts(props) {
                  also known as Kalemegdan, is home to many historical and cultural landmarks, including the Belgrade
                   Fortress and the St. Petka Chapel. The city is also known for its vibrant nightlife and many restaurants
                    and cafes that serve traditional Serbian cuisine.</Card.Text>
-              <Button onClick={() => handleClick("belgrade")} >{isActiveBelgrade ? "Close" : 'Expand'}</Button>
+              <Button className='btn-cards' onClick={() => handleClick("belgrade")} >{isActiveBelgrade ? "Close" : 'Expand'}</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -90,7 +95,7 @@ export default function Posts(props) {
               display of water and mist. The waterfall is surrounded by lush greenery, making it a popular spot for hiking and picnicking. Visitors can
               also take a dip in the pools at the base of the waterfall or even climb to the top for a different view. Due to its natural beauty and
               serene atmosphere, Polska Skakavitsa is a must-see destination for nature lovers and outdoor enthusiasts.</Card.Text>
-              <Button onClick={() => handleClick("skakavitsa")} >{isActiveSkakavitsa ? "Close" : 'Expand'}</Button>
+              <Button className='btn-cards' onClick={() => handleClick("skakavitsa")} >{isActiveSkakavitsa ? "Close" : 'Expand'}</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -111,7 +116,7 @@ export default function Posts(props) {
                 and the pebble beaches are the perfect place to relax and soak up the sun. Visitors can also take a
                 boat tour of the coast to see the town from a different perspective or hike the many trails that wind
                 through the hills.</Card.Text>
-              <Button onClick={() => handleClick("positano")} >{isActivePositano ? "Close" : 'Expand'}</Button>
+              <Button className='btn-cards' onClick={() => handleClick("positano")} >{isActivePositano ? "Close" : 'Expand'}</Button>
             </Card.Body>
         </Card>
         </Col>
@@ -130,7 +135,7 @@ export default function Posts(props) {
                 dedicated to Saint Andrew. Amalfi is a popular tourist destination for its charming shops, delicious seafood and traditional dishes,
                  boat tours and other activities, making it an ideal destination for those who love the sea, history, and good food.
               </Card.Text>
-              <Button onClick={() => handleClick("amalfi")}  >{isActiveAmalfi ? "Close" : 'Expand'}</Button>
+              <Button className='btn-cards' onClick={() => handleClick("amalfi")}  >{isActiveAmalfi ? "Close" : 'Expand'}</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -149,7 +154,7 @@ export default function Posts(props) {
               Naples also boasts many historical sites such as Pompeii, Herculaneum, and the Royal Palace of Naples,
               as well as the historic city center, a UNESCO World Heritage Site, where visitors can admire the baroque architecture and street art.
               </Card.Text>
-              <Button onClick={() => handleClick("naples")}  >{isActiveNaples ? "Close" : 'Expand'}</Button>
+              <Button className='btn-cards' onClick={() => handleClick("naples")}  >{isActiveNaples ? "Close" : 'Expand'}</Button>
             </Card.Body>
           </Card>
         </Col>

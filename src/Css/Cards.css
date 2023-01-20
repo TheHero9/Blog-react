@@ -7,13 +7,14 @@
   }
   
 
- .btn{
-    background-color:rgb(27, 26, 26) !important;
+ .btn-cards{
+    background-color:rgb(136, 134, 134) !important;
     border: none !important;
+    border-radius: 5px;;
     box-shadow: none !important;
   }
   
-  .btn:hover{
+  .btn-cards:hover{
     background-color: beige !important;
     color: black !important;
     border: 1px solid black !important;
@@ -58,7 +59,7 @@
   }
   .country-card{
     font-family: 'Merriweather', serif;
-    text-decoration: underline 1px;
+    /* text-decoration: underline 1px; */
   }
   
   .card--extended .photo-div{

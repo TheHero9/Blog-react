@@ -1,4 +1,4 @@
-import { Button } from 'bootstrap';
+import { Button } from 'react-bootstrap';
 import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -7,12 +7,13 @@ import { FaCompass, FaMailBulk, FaDoorOpen, FaDoorClosed, FaSmileBeam, FaMoon} f
 import { Link } from 'react-router-dom';
 import { useAuth } from './Context/AuthContext';
 
-function NavBar() {
+function NavBar(props) {
+
     const [loggedIn, setLoggedIn] = useState(true)
     const {currentUser} = useAuth()
   return (
     <>
-      <Navbar expand="md" bg="dark" variant="dark" >
+      <Navbar  expand="md" bg="dark" variant="dark" >
         <Container>
           <Navbar.Brand> Dimi's Blog</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

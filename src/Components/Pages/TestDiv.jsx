@@ -5,7 +5,9 @@ import { useThemeUpdate } from "./Context/ThemeContext"
 import { useTheme } from "./Context/ThemeContext"
 
 
-export default function ThemeContextComponent(){
+
+export default function TestDiv(){
+
     const lightTheme = useTheme()
     const toggleTheme = useThemeUpdate()
     
@@ -14,13 +16,10 @@ export default function ThemeContextComponent(){
         color: !lightTheme ? 'red' : 'blue'
     }
 
-    
     return(
-        <>
+        <div>
             <Button className="buttonMode" onClick={toggleTheme}><FaMoon/></Button>
-            <div style={themeStyles}> 
-                <h1>Hello</h1>
-            </div>
-        </>
+            <h1 style={themeStyles}>Lets see my color: {lightTheme} </h1>
+        </div>
     )
 }

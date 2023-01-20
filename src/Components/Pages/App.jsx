@@ -10,6 +10,9 @@ import NavBar from './NavBar';
 import Posts from './Posts';
 import ContactMe from './ContactMe';
 
+import { useThemeUpdate } from "./Context/ThemeContext"
+import { useTheme } from "./Context/ThemeContext"
+
 import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 
 
@@ -20,21 +23,37 @@ import ForgotPassword from '../Pages/ForgotPassword';
 import SwitchMode from './SwitchMode';
 import { useState } from 'react';
 import ThemeContextComponent from './FunctionComponent';
-import AppTest from './AppTest'
 
+import { Button } from 'react-bootstrap'
+import { FaMoon } from 'react-icons/fa'
+
+
+import { ThemeProvider } from './Context/ThemeContext'
+import TestDiv from './TestDiv'
 
 
 function App() {
+
+//   const lightTheme = useTheme()
+//   const toggleTheme = useThemeUpdate()
+
+
+//   const themeStyles = {
+//     backgroundColor: lightTheme ? 'red' : 'blue',
+//     color: !lightTheme ? 'red' : 'blue'
+// }
+
   return (
+    <ThemeProvider>
+    
         <div className="app">
 
 
-
           <NavBar/>
-          <h1 className="testPPP">Test we</h1>
-          <SwitchMode/>
 
-          <AppTest/>
+            {/* <TestDiv/> */}
+
+          <ThemeContextComponent/>
 
           <Routes>
             <Route path='/' element={<Posts />} />
@@ -49,6 +68,7 @@ function App() {
           <Footer/>
 
         </div>
+      </ThemeProvider>
   );
 }
 
