@@ -70,11 +70,11 @@ export default function Posts(props) {
               <Card.Text className={isActiveBelgrade ? "my-p" : 'my-p city-description'}>
               Belgrade is the capital and largest city of Serbia. It is located at the confluence of 
               the Sava and Danube rivers and is considered the cultural, economic, and political center
-               of the country. The city has a rich history dating back to ancient times and has been influenced
-                by a variety of cultures and civilizations throughout its long history. The Old Town of Belgrade,
-                 also known as Kalemegdan, is home to many historical and cultural landmarks, including the Belgrade
-                  Fortress and the St. Petka Chapel. The city is also known for its vibrant nightlife and many restaurants
-                   and cafes that serve traditional Serbian cuisine.</Card.Text>
+              of the country. The city has a rich history dating back to ancient times and has been influenced
+              by a variety of cultures and civilizations throughout its long history. The Old Town of Belgrade,
+              also known as Kalemegdan, is home to many historical and cultural landmarks, including the Belgrade
+              Fortress and the St. Petka Chapel. The city is also known for its vibrant nightlife and many restaurants
+              and cafes that serve traditional Serbian cuisine.</Card.Text>
               <Button className='btn-cards' onClick={() => handleClick("belgrade")} >{isActiveBelgrade ? "Close" : 'Expand'}</Button>
             </Card.Body>
           </Card>
