@@ -46,9 +46,9 @@ const Login = () => {
         <>
 
          
-          <Card>
+          <Card className="main-container-card">
             <Card.Body className="flex-my">
-                <h2> Log In</h2>
+            <h2> Log in <br></br> (⚠️Work in progress)</h2>
                 {error && <Alert variant="danger">{error}</Alert>}
                 <Form onSubmit={handleSubmit}>
                     <Form.Group id='email'>

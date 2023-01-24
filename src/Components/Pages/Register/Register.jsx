@@ -55,7 +55,7 @@ const Register = () => {
         <>
 
          
-          <Card>
+          <Card className="main-container-card">
             <Card.Body className="flex-my">
                 <h2> Sign Up <br></br> (⚠️Work in progress)</h2>
                 {currentUser && currentUser.email}
