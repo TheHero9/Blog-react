@@ -7,7 +7,7 @@ import React from "react"
 import Footer from "./Footer"
 import NavBar from './NavBar';
 
-import Posts from './Posts';
+import Posts from './UnusedPages/Posts';
 import ContactMe from './ContactMe';
 
 import { useThemeUpdate } from "./Context/ThemeContext"
@@ -30,7 +30,7 @@ import { FaMoon } from 'react-icons/fa'
 
 import { ThemeProvider } from './Context/ThemeContext'
 import TestDiv from './TestDiv'
-import ListKeys from './TestKeys'
+import PostComponent from './PostsComponent'
 
 
 function App() {
@@ -51,15 +51,13 @@ function App() {
 
 
           <NavBar/>
-
-          <ListKeys/>
           {/* <TestDiv/> */}
 
           {/* <ThemeContextComponent/> */}
 
           <Routes>
-            <Route path='/' element={<Posts />} />
-            <Route path='/posts' element={<Posts />} />
+            <Route path='/' element={<PostComponent />} />
+            <Route path='/posts' element={<PostComponent />} />
             <Route path='/footer' element={<ContactMe />} />
             <Route path='/register' element={<RegisterPage />} />
             <Route path='/login' element={<LoginPage />} />

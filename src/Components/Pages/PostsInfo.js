@@ -1,3 +1,9 @@
+import belgrade from "../Photos/belgrade.jpeg"
+import positano from "../Photos/positano.jpeg"
+import polska from "../Photos/polskaskakavitsa.jpeg"
+import amalfi from "../Photos/amalfi.jpeg"
+import naples from "../Photos/naples.jpeg"
+
 
 export const places =[
     {
@@ -11,7 +17,7 @@ export const places =[
         also known as Kalemegdan, is home to many historical and cultural landmarks, including the Belgrade \
         Fortress and the St. Petka Chapel. The city is also known for its vibrant nightlife and many restaurants \
         and cafes that serve traditional Serbian cuisine.",
-        files: "belgrade.jpeg",
+        files: belgrade,
     },
     {
         id: 2,
@@ -22,7 +28,7 @@ export const places =[
         display of water and mist. The waterfall is surrounded by lush greenery, making it a popular spot for hiking and picnicking. Visitors can \
         also take a dip in the pools at the base of the waterfall or even climb to the top for a different view. Due to its natural beauty and \
         serene atmosphere, Polska Skakavitsa is a must-see destination for nature lovers and outdoor enthusiasts." ,
-        files: "polskaSkakavitsaPhoto" ,
+        files: polska ,
     },
     {
         id: 3,
@@ -35,7 +41,7 @@ export const places =[
         and the pebble beaches are the perfect place to relax and soak up the sun. Visitors can also take a \
         boat tour of the coast to see the town from a different perspective or hike the many trails that wind \
         through the hills.",
-        files: "positanoPhoto", 
+        files: positano, 
         
     },
     {
@@ -46,7 +52,7 @@ export const places =[
         It is situated in a small bay surrounded by the Mediterranean Sea and steep cliffs, home to the famous Amalfi Cathedral, \
          dedicated to Saint Andrew. Amalfi is a popular tourist destination for its charming shops, delicious seafood and traditional dishes,  \
           boat tours and other activities, making it an ideal destination for those who love the sea, history, and good food.",
-        files: "amalfiPhoto" ,
+        files: amalfi ,
     },
     {
         id: 5,
@@ -56,7 +62,7 @@ export const places =[
         It is situated on the Gulf of Naples and is the capital of the Campania region. Famous for being the birthplace of pizza, \
         Naples also boasts many historical sites such as Pompeii, Herculaneum, and the Royal Palace of Naples, \
         as well as the historic city center, a UNESCO World Heritage Site, where visitors can admire the baroque architecture and street art.",
-        files: "naplesPhoto",
+        files: naples,
     },
     // {
     //     id: 6,
