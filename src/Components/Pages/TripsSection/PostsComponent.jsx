@@ -16,7 +16,7 @@ export default function PostComponent(){
         <>
             <div id="posts">
                 <h1>My trips: </h1>
-                <Row className="row" xs={1}  >
+                <Row className="rowCard" xs={1}  >
                     {placesList}
                 </Row>   
             </div>

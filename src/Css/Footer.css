@@ -1,6 +1,6 @@
 #footer {
     background-color: rgba(0, 0, 0, 0.858);
-    color: beige;
+    color: rgb(249, 249, 234);
     padding-bottom: 40px;
     font-family: 'Open Sans', sans-serif;
   }
@@ -17,12 +17,12 @@
   
   #footer a{
     text-decoration: none;
-    color: beige;
+    color: rgb(249, 249, 234);
   }
   
   #footer a:hover{
     text-decoration:overline;
-    color:beige;
+    color:rgb(251, 251, 245);
   }
   
   #footer h1{

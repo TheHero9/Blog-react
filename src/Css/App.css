@@ -1,15 +1,3 @@
-.navbar{
-  font-family: 'Open Sans', sans-serif;
-}
-
-.nav-link{
-  font-size: 1.1rem;
-}
-
-.nav-link:hover{
-
-  color:beige !important;
-}
 
 .Emoji{
   margin: 0 3px;
@@ -30,9 +18,6 @@
   color: white;
 }
 
-
-
-
 /* Dark Mode */
 
 .buttonMode{
@@ -44,3 +29,6 @@
   color: yellow !important;
   border-radius: 60px;
 }
+
+
+

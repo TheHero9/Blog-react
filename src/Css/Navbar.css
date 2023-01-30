@@ -1,0 +1,13 @@
+.navbar{
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .nav-link{
+    font-size: 1.1rem;
+  }
+  
+  .nav-link:hover{
+  
+    color:beige !important;
+  }
+  

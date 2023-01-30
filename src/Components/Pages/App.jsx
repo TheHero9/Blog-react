@@ -1,6 +1,8 @@
 import '../../Css/App.css'
 import '../../Css/Footer.css'
-import '../../Css/Cards.css'
+import '../../Css/Trips.css'
+import '../../Css/Navbar.css'
+import '../../Css/Home.css'
 
 import React from "react"
 
