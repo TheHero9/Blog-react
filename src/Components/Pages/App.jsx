@@ -30,7 +30,7 @@ import { FaMoon } from 'react-icons/fa'
 
 import { ThemeProvider } from './Context/ThemeContext'
 import TestDiv from './TestDiv'
-import PostComponent from './PostsComponent'
+import PostComponent from './PagesSection/PostsComponent'
 import ProgrammingTopics from '../ProgrammingTopics/MainPage'
 import Recursion from '../ProgrammingTopics/Topics/Recursion'
 

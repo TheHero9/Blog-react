@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Button, Card, Col, Row } from "react-bootstrap"
-import {belgradePhoto, positanoPhoto, polskaSkakavitsaPhoto, amalfiPhoto, naplesPhoto} from "./UnusedPages/PhotoRender.jsx"
+import {belgradePhoto, positanoPhoto, polskaSkakavitsaPhoto, amalfiPhoto, naplesPhoto} from "../UnusedPages/PhotoRender.jsx"
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 

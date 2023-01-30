@@ -1,8 +1,8 @@
-import belgrade from "../Photos/belgrade.jpeg"
-import positano from "../Photos/positano.jpeg"
-import polska from "../Photos/polskaskakavitsa.jpeg"
-import amalfi from "../Photos/amalfi.jpeg"
-import naples from "../Photos/naples.jpeg"
+import belgrade from "../../Photos/belgrade.jpeg"
+import positano from "../../Photos/positano.jpeg"
+import polska from "../../Photos/polskaskakavitsa.jpeg"
+import amalfi from "../../Photos/amalfi.jpeg"
+import naples from "../../Photos/naples.jpeg"
 
 
 export const places =[
