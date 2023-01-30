@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { FaCompass, FaMailBulk, FaDoorOpen, FaDoorClosed, FaSmileBeam, FaMoon} from "react-icons/fa"
+import { FaCompass, FaMailBulk, FaDoorOpen, FaDoorClosed, FaSmileBeam, FaMoon, FaKeyboard} from "react-icons/fa"
 import { Link } from 'react-router-dom';
 import { useAuth } from './Context/AuthContext';
 
@@ -20,7 +20,9 @@ function NavBar(props) {
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto"> 
 
+
             <Link className='nav-link' to="/posts" relative="path"><FaMailBulk className='Emoji'/>Posts</Link>
+            <Link className='nav-link' to="/programming" relative="path"><FaKeyboard className='Emoji'/>Programming</Link>
             <Link className='nav-link' to="/footer" relative="path"><FaCompass className='Emoji'/>Contact Me</Link>
             {currentUser ? 
             <Link className='nav-link' to="/dashboard" relative="path"><FaSmileBeam className='Emoji'/> Profile </Link>

@@ -31,6 +31,8 @@ import { FaMoon } from 'react-icons/fa'
 import { ThemeProvider } from './Context/ThemeContext'
 import TestDiv from './TestDiv'
 import PostComponent from './PostsComponent'
+import ProgrammingTopics from '../ProgrammingTopics/MainPage'
+import Recursion from '../ProgrammingTopics/Topics/Recursion'
 
 
 function App() {
@@ -57,6 +59,10 @@ function App() {
 
           <Routes>
             <Route path='/' element={<PostComponent />} />
+
+
+            <Route path='/programming' element={<ProgrammingTopics/>} />
+            <Route path='/programming&recursion' element={<Recursion/>} />
             <Route path='/posts' element={<PostComponent />} />
             <Route path='/footer' element={<ContactMe />} />
             <Route path='/register' element={<RegisterPage />} />
