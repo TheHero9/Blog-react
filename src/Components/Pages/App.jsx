@@ -30,9 +30,10 @@ import { FaMoon } from 'react-icons/fa'
 
 import { ThemeProvider } from './Context/ThemeContext'
 import TestDiv from './TestDiv'
-import PostComponent from './PagesSection/PostsComponent'
+import PostComponent from './TripsSection/PostsComponent'
 import ProgrammingTopics from '../ProgrammingTopics/MainPage'
 import Recursion from '../ProgrammingTopics/Topics/Recursion'
+import Home from './HomePage/Home'
 
 
 function App() {
@@ -58,9 +59,9 @@ function App() {
           {/* <ThemeContextComponent/> */}
 
           <Routes>
-            <Route path='/' element={<PostComponent />} />
+            <Route path='/' element={<Home />} />
 
-
+            
             <Route path='/programming' element={<ProgrammingTopics/>} />
             <Route path='/programming&recursion' element={<Recursion/>} />
             <Route path='/posts' element={<PostComponent />} />

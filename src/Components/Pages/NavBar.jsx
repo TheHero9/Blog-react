@@ -15,7 +15,9 @@ function NavBar(props) {
     <>
       <Navbar  expand="md" bg="dark" variant="dark" >
         <Container>
-          <Navbar.Brand> Dimi's Blog</Navbar.Brand>
+          <Navbar.Brand> 
+          <Link className='nav-link' to="/" relative="path">Dimi's Blog</Link>
+            </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto"> 
