@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Blog-react/static/css/main.79ea7f52.css",
-    "main.js": "/Blog-react/static/js/main.0a6a6af3.js",
+    "main.css": "/Blog-react/static/css/main.3d9567fc.css",
+    "main.js": "/Blog-react/static/js/main.5e891eeb.js",
     "static/media/polskaskakavitsa.jpeg": "/Blog-react/static/media/polskaskakavitsa.bc1bcd6f0076b063117e.jpeg",
     "static/media/amalfi.jpeg": "/Blog-react/static/media/amalfi.674adff34d3f863da300.jpeg",
     "static/media/belgrade.jpeg": "/Blog-react/static/media/belgrade.d4cb5a82755cbc31dbbf.jpeg",
@@ -10,11 +10,11 @@
     "static/media/travel.png": "/Blog-react/static/media/travel.ece853abe6b5006ec142.png",
     "static/media/comp.png": "/Blog-react/static/media/comp.233a1c0e1ed13aee3019.png",
     "index.html": "/Blog-react/index.html",
-    "main.79ea7f52.css.map": "/Blog-react/static/css/main.79ea7f52.css.map",
-    "main.0a6a6af3.js.map": "/Blog-react/static/js/main.0a6a6af3.js.map"
+    "main.3d9567fc.css.map": "/Blog-react/static/css/main.3d9567fc.css.map",
+    "main.5e891eeb.js.map": "/Blog-react/static/js/main.5e891eeb.js.map"
   },
   "entrypoints": [
-    "static/css/main.79ea7f52.css",
-    "static/js/main.0a6a6af3.js"
+    "static/css/main.3d9567fc.css",
+    "static/js/main.5e891eeb.js"
   ]
 }
