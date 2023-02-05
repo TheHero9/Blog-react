@@ -30,5 +30,46 @@
   border-radius: 60px;
 }
 
+/* Cards contact me */
 
 
+
+
+.emoji-card{
+  color: black;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.emoji-card:hover{
+  color: #151cf5;
+}
+
+.contact-me-container{
+  text-align: center;
+  background-color: #ddeff9;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+
+.contact-me-container li{
+  color: black;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+
+@media only screen and (min-width: 900px) {
+  .contact-me-container{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+.testHide{
+  display: none;
+}
+
+}

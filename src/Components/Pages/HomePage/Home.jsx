@@ -27,11 +27,12 @@ const Home = function(){
                 </Col>
 
                 <Col sm>
+
                     <Link className="link-home" to="/programming" relative="path">
                         <Card className="card-home">
                             <Card.Img className="img-home"  src={comp} alt="LaptopImage" />
                             <Card.Body>
-                                <Card.Title>Programming Topics</Card.Title>
+                                <Card.Title>Programming Topics WORK IN PROGRESS</Card.Title>
                                 <Card.Text>
                                     Explore my topic analysis
                                 </Card.Text>
